@@ -22,7 +22,9 @@ namespace CONTACTO_EJERCICIO.Controllers
         {
             return View();
         }
-        public IActionResult Create()
+
+        [HttpPost]
+        public IActionResult Create(Contacto objContacto)
         {
             return View("Index");
         }
