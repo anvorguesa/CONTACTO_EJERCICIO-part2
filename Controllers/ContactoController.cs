@@ -26,6 +26,7 @@ namespace CONTACTO_EJERCICIO.Controllers
         [HttpPost]
         public IActionResult Create(Contacto objContacto)
         {
+            ViewData["Message"]="Se registro el contacto";
             return View("Index");
         }
     }
