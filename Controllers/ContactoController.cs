@@ -20,12 +20,14 @@ namespace CONTACTO_EJERCICIO.Controllers
 
         public IActionResult Index()
         {
+            ViewData["Message"] = " ";
             return View();
         }
 
         [HttpPost]
         public IActionResult Create(Contacto objContacto)
         {
+            ViewData["Message"]="Se registro el contacto";
             return View("Index");
         }
     }
